@@ -25,7 +25,7 @@
 
 /*
  * Increasing the SDL audio buffer reduces risk of dropouts,
- * but increases response time.  SDL_OpenAudio(3) uses 8192 as an 
+ * but increases response time.  SDL_OpenAudio(3) uses 8192 as an
  * example value, which seems to be reasonable.
  */
 #define SDL_AUDIO_BUFFER_SIZE	8192
@@ -459,7 +459,7 @@ player_setdebugmode(void)
 
 /*
  * Stops the current playback.
- * This function waits untill the playback has gracefully stopped.
+ * This function waits until the playback has gracefully stopped.
  */
 void
 player_stop(void)
@@ -488,7 +488,7 @@ player_togglepause(void)
 }
 
 /*
- * Resamples a frame if needed and pushes the audio data along 
+ * Resamples a frame if needed and pushes the audio data along
  * with a timestamp onto the framelist.
  */
 static void
